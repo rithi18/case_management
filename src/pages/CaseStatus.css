@@ -1,0 +1,84 @@
+/* ===== FULL PAGE WRAPPER ===== */
+.case-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+/* ===== CARD ===== */
+.case-card {
+  width: 450px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 30px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: 0.3s ease;
+}
+
+.case-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== TITLE ===== */
+.case-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* ===== DESCRIPTION SECTION ===== */
+.case-description {
+  margin: 15px 0;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* ===== DATE ===== */
+.case-date {
+  font-weight: bold;
+  color: #00c6ff;
+}
+
+/* ===== BUTTON ROW ===== */
+.button-row {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* BACK BUTTON */
+.back-btn {
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  background: #00c6ff;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #0094cc;
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  background: #ff4b2b;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #cc3a1f;
+}

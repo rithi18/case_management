@@ -1,0 +1,84 @@
+/* ===== FULL PAGE WRAPPER ===== */
+.case-details-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* ===== CARD ===== */
+.case-card {
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;   /* solid white for visibility */
+  border-radius: 20px;
+  padding: 35px;
+  color: #111827;        /* dark text */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.case-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ===== TITLE ===== */
+.case-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1e3c72;
+}
+
+/* ===== DESCRIPTION ===== */
+.case-description {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* ===== DATE ===== */
+.case-date {
+  font-weight: bold;
+  color: #2563eb;
+}
+
+/* ===== BUTTON ROW ===== */
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+/* BACK BUTTON */
+.back-btn {
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  background: #e5e7eb;
+  color: #111827;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #d1d5db;
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+  padding: 10px 18px;
+  border-radius: 25px;
+  border: none;
+  background: #ef4444;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}

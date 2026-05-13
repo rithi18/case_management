@@ -1,0 +1,104 @@
+/* ===== DASHBOARD WRAPPER ===== */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 40px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  font-family: "Arial", sans-serif;
+  color: white;
+}
+
+/* ===== CARDS SECTION ===== */
+.cards {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* ===== GLASS CARD ===== */
+.card {
+  flex: 1;
+  min-width: 220px;
+  padding: 1.8rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h3 {
+  margin: 0.8rem 0 0.3rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.card p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  color: #ffffff;
+}
+
+.card-icon {
+  margin-bottom: 0.8rem;
+  font-size: 2rem;
+  color: #00c6ff;
+}
+
+/* ===== RECENT CASES SECTION ===== */
+.recent-cases {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(15px);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.recent-cases h2 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* ===== TABLE ===== */
+.cases-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+.cases-table th,
+.cases-table td {
+  padding: 12px 10px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.cases-table th {
+  background-color: rgba(255,255,255,0.2);
+  font-weight: 600;
+}
+
+.cases-table tbody tr:hover {
+  background-color: rgba(255,255,255,0.1);
+  transition: 0.2s;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+  }
+}
